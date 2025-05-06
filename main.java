@@ -15,7 +15,7 @@ public class Main{
     //second number
     System.out.print("Enter second number:");
     BigDecimal b = new BigDecimal(in.nextLine());                                          
-    System.out.print("=");
+    System.out.print("= ");
     switch(o){
      case "+": System.out.println(a.add(b));
                break;
@@ -33,7 +33,6 @@ public class Main{
    } catch (NumberFormatException e){
       System.out.println("Invalid Input.");
       return;
-      break; 
    }
   }
  }
