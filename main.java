@@ -10,7 +10,7 @@ public class Main{
     System.out.print("Enter first number:");
     BigDecimal a = new BigDecimal(in.nextLine());
  //oparator
-    System.out.print("Enter oparator(+,-,x, /,%):");
+    System.out.print("Enter oparator(+,-,x,/,%):");
     String o = in.nextLine();
     //second number
     System.out.print("Enter second number:");

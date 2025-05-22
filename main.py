@@ -1,18 +1,23 @@
+
 while True:
  try:
   a = float(input("Enter first number:"))
-  o = str(input("Enter operator(+,-,x,/,%):"))
+  o = str(input("Enter operator(+,-,x,/,%,^):"))
   b = float(input("Enter second number:"))
+  r = None
   match o:
-   case "+": print(f"{a} {o} {b} = {a+b}")
-   case "-": print(f"{a} {o} {b} = {a-b}")
-   case "x": print(f"{a} {o} {b} = {a*b}")
-   case "/": print(f"{a} {o} {b} = {a/b}")
-   case "%": print(f"{a} {o} {b} = {a%b}")
+   case "+": r = a + b
+   case "-": r = a - b
+   case "x" | "*": r = a * b
+   case "/": r = a / b
+   case "%": r = a % b
+   case "^": r = a ** b
    case _:
      print("Invaild Operator.")
      break
-
+  print(f"{a} {o} {b} = {format(r, '.20f').rstrip('0').rstrip('.')}")
  except ValueError:
   print("Invalid Input.")
   break
+ except Exception as e:
+  print(f"An error occurred:{e}")
