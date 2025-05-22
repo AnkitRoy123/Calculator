@@ -14,8 +14,8 @@ public class Main{
     String o = in.nextLine();
     //second number
     System.out.print("Enter second number:");
-    BigDecimal b = new BigDecimal(in.nextLine());                                          
-    System.out.print("= ");
+    BigDecimal b = new BigDecimal(in.nextLine());
+    System.out.print(a + " " + o + " " + b + " " + "= ");
     switch(o){
      case "+": System.out.println(a.add(b));
                break;
